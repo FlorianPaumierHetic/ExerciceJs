@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="card col-3 m-auto">
+        <div class="card-header">Connexion</div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="Login">Login</label>
+                <input name="Login" id="Login" type="text">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input name="password" id="password" type="password">
+            </div>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-primary" id="btn-login">Connexion</button>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+
+    {{ encore_entry_script_tags('app') }}
+{% endblock %}

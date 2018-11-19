@@ -1,0 +1,4 @@
+app_offer_api:
+    resource: App\Controller\LoginController
+    type: rest
+    prefix: /
